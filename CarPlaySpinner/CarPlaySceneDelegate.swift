@@ -74,7 +74,9 @@
                 self.pushToNext()
             }))
             actions.append(CPAlertAction(title: "Cancel", style: .cancel, handler: { _ in
-                self.interfaceController?.dismissTemplate(animated: true)
+                self.interfaceController?.dismissTemplate(animated: true, completion: { (success, error) in
+                    debugPrint("Template was dismissed!")
+                })
             }))
 
             let template = CPActionSheetTemplate(title: "Select action", message: "Any action will do", actions: actions)
