@@ -68,10 +68,26 @@
             var actions = [CPAlertAction]()
 
             actions.append(CPAlertAction(title: "Action 1", style: .default, handler: { _ in
-                self.pushToNext()
+                self.pushToNext(title: "First action") { (success, error) in
+                    if let error = error {
+                        debugPrint("There was an error while pushing to next: \(error)")
+                    } else if success {
+                        debugPrint("Push to next was a success!")
+                    } else if !success {
+                        debugPrint("Push to next wss NOT a success, yet no error was given 🤔")
+                    }
+                }
             }))
             actions.append(CPAlertAction(title: "Action 2", style: .default, handler: { _ in
-                self.pushToNext()
+                self.pushToNext(title: "Second action") { (success, error) in
+                    if let error = error {
+                        debugPrint("There was an error while pushing to next: \(error)")
+                    } else if success {
+                        debugPrint("Push to next was a success!")
+                    } else if !success {
+                        debugPrint("Push to next wss NOT a success, yet no error was given 🤔")
+                    }
+                }
             }))
             actions.append(CPAlertAction(title: "Cancel", style: .cancel, handler: { _ in
                 self.interfaceController?.dismissTemplate(animated: true, completion: { (success, error) in
@@ -83,7 +99,7 @@
             interfaceController?.presentTemplate(template, animated: true, completion: nil)
         }
 
-        func pushToNext(completion: ((Bool, Error?) -> Void)? = nil) {
-            interfaceController?.pushTemplate(infoPage(title: "Information page", detail: "With details"), animated: true, completion: completion)
+        func pushToNext(title: String, completion: ((Bool, Error?) -> Void)? = nil) {
+            interfaceController?.pushTemplate(infoPage(title: title, detail: "Information page with details"), animated: true, completion: completion)
         }
     }
