@@ -13,6 +13,7 @@
 		2A657F95250FB01A0017939F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A657F93250FB01A0017939F /* Main.storyboard */; };
 		2A657F97250FB01B0017939F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A657F96250FB01B0017939F /* Assets.xcassets */; };
 		2A657F9A250FB01B0017939F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A657F98250FB01B0017939F /* LaunchScreen.storyboard */; };
+		2A657FA3250FB0530017939F /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A657FA2250FB0530017939F /* CarPlaySceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		2A657F96250FB01B0017939F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A657F99250FB01B0017939F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A657F9B250FB01B0017939F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A657FA1250FB0220017939F /* CarPlaySpinner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarPlaySpinner.entitlements; sourceTree = "<group>"; };
+		2A657FA2250FB0530017939F /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		2A657F8C250FB01A0017939F /* CarPlaySpinner */ = {
 			isa = PBXGroup;
 			children = (
+				2A657FA1250FB0220017939F /* CarPlaySpinner.entitlements */,
 				2A657F8D250FB01A0017939F /* AppDelegate.swift */,
 				2A657F8F250FB01A0017939F /* SceneDelegate.swift */,
 				2A657F91250FB01A0017939F /* ViewController.swift */,
@@ -63,6 +67,7 @@
 				2A657F96250FB01B0017939F /* Assets.xcassets */,
 				2A657F98250FB01B0017939F /* LaunchScreen.storyboard */,
 				2A657F9B250FB01B0017939F /* Info.plist */,
+				2A657FA2250FB0530017939F /* CarPlaySceneDelegate.swift */,
 			);
 			path = CarPlaySpinner;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			files = (
 				2A657F92250FB01A0017939F /* ViewController.swift in Sources */,
 				2A657F8E250FB01A0017939F /* AppDelegate.swift in Sources */,
+				2A657FA3250FB0530017939F /* CarPlaySceneDelegate.swift in Sources */,
 				2A657F90250FB01A0017939F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CarPlaySpinner/CarPlaySpinner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B3SHVL3L5;
 				INFOPLIST_FILE = CarPlaySpinner/Info.plist;
@@ -305,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CarPlaySpinner/CarPlaySpinner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6B3SHVL3L5;
 				INFOPLIST_FILE = CarPlaySpinner/Info.plist;

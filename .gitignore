@@ -1,0 +1,57 @@
+# Xcode
+DerivedData
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+!default.xcworkspace
+xcuserdata
+profile
+*.moved-aside
+.DS_Store
+.idea
+support/**/ios/
+screenshot_*.png
+test-reports/
+.irb-history
+.bundle
+*.xccheckout
+config.sh
+local-cast-id.txt
+release_notes.txt
+*.xcscmblueprint
+Git.swift
+Changelog.md
+Pods/*
+fastlane/report.xml
+ICA.app.coverage.txt
+ICATests.xctest.coverage.txt
+vendor
+dsyms/*.zip
+
+# Cocoapods
+
+Pods_ICA.framework.coverage.txt
+Pods_ICATests.framework.coverage.txt
+
+# Carthage
+Carthage/Build/Mac
+Carthage/Build/tvOS
+Example/
+
+# fastlane
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+/Index
+/Build
+/Carthage
+/info.plist
+/Logs
+/ModuleCache.noindex
