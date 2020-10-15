@@ -59,15 +59,15 @@
 		2A657F8C250FB01A0017939F /* CarPlaySpinner */ = {
 			isa = PBXGroup;
 			children = (
-				2A657FA1250FB0220017939F /* CarPlaySpinner.entitlements */,
 				2A657F8D250FB01A0017939F /* AppDelegate.swift */,
+				2A657F96250FB01B0017939F /* Assets.xcassets */,
+				2A657FA2250FB0530017939F /* CarPlaySceneDelegate.swift */,
+				2A657FA1250FB0220017939F /* CarPlaySpinner.entitlements */,
+				2A657F9B250FB01B0017939F /* Info.plist */,
+				2A657F98250FB01B0017939F /* LaunchScreen.storyboard */,
+				2A657F93250FB01A0017939F /* Main.storyboard */,
 				2A657F8F250FB01A0017939F /* SceneDelegate.swift */,
 				2A657F91250FB01A0017939F /* ViewController.swift */,
-				2A657F93250FB01A0017939F /* Main.storyboard */,
-				2A657F96250FB01B0017939F /* Assets.xcassets */,
-				2A657F98250FB01B0017939F /* LaunchScreen.storyboard */,
-				2A657F9B250FB01B0017939F /* Info.plist */,
-				2A657FA2250FB0530017939F /* CarPlaySceneDelegate.swift */,
 			);
 			path = CarPlaySpinner;
 			sourceTree = "<group>";
